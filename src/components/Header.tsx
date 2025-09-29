@@ -38,16 +38,6 @@ export function Header() {
               Cách mạng xã hội
             </a>
           </li>
-          <li>
-            <a href="#quiz" className="nav-link">
-              Quiz
-            </a>
-          </li>
-          <li>
-            <a href="#chatbot" className="nav-link">
-              Chatbot
-            </a>
-          </li>
         </ul>
       </nav>
     </header>

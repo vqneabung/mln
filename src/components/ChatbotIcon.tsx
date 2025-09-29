@@ -3,7 +3,7 @@
 export function ChatbotIcon() {
   return (
     <img
-      src="/philosopher.png"
+      src="philosophy.png"
       alt="Philosopher Chatbot"
       className="chatbot-icon"
     />

@@ -8,6 +8,24 @@
   font-family: "Inter", sans-serif;
 }
 
+/* Custom scrollbar styles */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #d2b48c;
+  border-radius: 3px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #c19a6b;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -353,7 +371,7 @@ body {
   scrollbar-color: #d2b48c transparent;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  min-height: 0;
+  /* Remove min-height to allow flexible sizing */
 }
 
 .chat-body::-webkit-scrollbar {
@@ -435,6 +453,28 @@ body {
   padding: 15px 18px 20px;
   background: #f5deb3;
   border-top: 1px solid #d2b48c;
+  margin-top: auto; /* This ensures footer stays at bottom */
+}
+
+/* Custom height variants for chat-body */
+.chat-body.compact {
+  min-height: 30vh;
+  max-height: 30vh;
+}
+
+.chat-body.medium {
+  min-height: 50vh;
+  max-height: 50vh;
+}
+
+.chat-body.large {
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.chat-body.auto-height {
+  flex: 1;
+  min-height: 0;
 }
 
 .chat-footer .chat-form {

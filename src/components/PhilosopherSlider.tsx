@@ -78,7 +78,7 @@ export function PhilosopherSlider() {
     );
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
