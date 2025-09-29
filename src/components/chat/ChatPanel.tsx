@@ -13,8 +13,19 @@ export default function ChatPanel({
   onSendMessage,
   status,
 }: ChatPanelProps) {
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [input, setInput] = useState("");
   const chatBodyRef = useRef<HTMLDivElement>(null);
+
+    const scrollToBottom = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        top: scrollContainerRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,9 +35,9 @@ export default function ChatPanel({
     }
   };
 
-  const handleQuickQuestion = (question: string) => {
-    onSendMessage(question);
-  };
+  // const handleQuickQuestion = (question: string) => {
+  //   onSendMessage(question);
+  // };
 
   useEffect(() => {
     if (chatBodyRef.current) {
@@ -42,13 +53,22 @@ export default function ChatPanel({
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
+        height: "86%",
         width: "100%",
         position: "relative",
       }}
     >
       {/* Chat Body */}
-      <div ref={chatBodyRef} className="chat-body">
+      <div 
+        ref={chatBodyRef} 
+        className="chat-body"
+        style={{
+          overflowY: 'auto',
+          flex: 1,
+          minHeight: 0,
+          paddingBottom: '10px', // Space for sticky footer
+        }}
+      >
         {/* Welcome message */}
         <div className="message bot-message">
           <ChatbotIcon />
@@ -87,7 +107,14 @@ export default function ChatPanel({
       </div>
 
       {/* Chat Footer */}
-      <div className="chat-footer">
+      <div 
+        className="chat-footer"
+        style={{
+          flexShrink: 0,
+          position: 'sticky',
+          bottom: 0,
+        }}
+      >
         <form onSubmit={handleSubmit} className="chat-form">
           <input
             type="text"
