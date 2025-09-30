@@ -1,5 +1,5 @@
 import { StreamingTextGenerationFromMessagesToResult } from '@/chatbot/helper/chatbot';
-import { convertToModelMessages, streamText, UIMessage } from 'ai';
+import { convertToModelMessages, createUIMessageStreamResponse, streamText, UIMessage } from 'ai';
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -9,5 +9,5 @@ export async function POST(req: Request) {
 
   const result = StreamingTextGenerationFromMessagesToResult(messages);
 
-  return result.toUIMessageStreamResponse();
+  return createUIMessageStreamResponse({ stream: result });
 }
