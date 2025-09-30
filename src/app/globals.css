@@ -25,6 +25,10 @@
   background: #c19a6b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -559,6 +563,13 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-brand:hover {
+  opacity: 0.8;
 }
 
 .nav-logo {
@@ -588,11 +599,29 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #daa520;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover {
   color: #daa520;
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 /* Main Content */
