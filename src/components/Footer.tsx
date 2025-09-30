@@ -32,6 +32,15 @@ export function Footer() {
               <li>
                 <a href="#philosophy">Triết học</a>
               </li>
+              <li>
+                <a href="#services">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="/quiz">Trắc nghiệm</a>
+              </li>
+              <li>
+                <a href="#contact">Liên hệ</a>
+              </li>
             </ul>
           </div>
           <div className="footer-section">

@@ -28,9 +28,9 @@ export function PhilosophyConcepts() {
     },
     {
       icon: "🌍",
-      title: "Tồn tại xã hội",
-      description: "Là toàn bộ những điều kiện sinh hoạt vật chất của xã hội. Tồn tại xã hội là thực tại xã hội khách quan, là một kiểu vật chất xã hội.",
-      details: "Phương thức sản xuất vật chất là yếu tố cơ bản và có vai trò quyết định nhất đối với ý thức xã hội. Tồn tại xã hội quyết định sự hình thành, nội dung và hình thức biểu hiện của ý thức xã hội.",
+      title: "Chủ nghĩa duy vật",
+      description: "Là quan điểm triết học khẳng định vật chất là cơ sở của tất cả hiện thực, vật chất có trước và quyết định ý thức.",
+      details: "Chủ nghĩa duy vật Mác-Lênin khẳng định: Vật chất là phạm trù triết học để chỉ thực tại khách quan được con người cảm nhận qua các giác quan, tồn tại không phụ thuộc vào ý thức và được ý thức phản ánh. Vật chất và ý thức có mối quan hệ biện chứng: vật chất quyết định ý thức, nhưng ý thức có tính tích cực, có thể tác động trở lại vật chất.",
     },
     {
       icon: "🔥",
@@ -57,10 +57,10 @@ export function PhilosophyConcepts() {
       details: "Trong xã hội có giai cấp, chính quyền thường chỉ có thể giành được bằng hình thức chiến tranh cách mạng, thông qua bạo lực cách mạng, vì giai cấp thống trị không bao giờ tự nguyện từ bỏ địa vị của mình. V.I. Lênin khẳng định: Nhà nước tư sản bị thay thế bởi nhà nước vô sản không thể bằng con đường \"tiêu vong,\" mà chỉ có thể bằng cách mạng bạo lực theo quy luật chung.",
     },
     // {
-    //   icon: "🕊️",
-    //   title: "Phương pháp hòa bình",
-    //   description: "Là phương pháp đấu tranh không dùng bạo lực cách mạng để giành chính quyền trong điều kiện cho phép.",
-    //   details: "Phương pháp hòa bình chỉ xảy ra khi có đủ hai điều kiện: 1) Giai cấp thống trị không còn bộ máy bạo lực đáng kể hoặc đã mất hết ý chí chống lại lực lượng cách mạng. 2) Lực lượng cách mạng phát triển mạnh, áp đảo kẻ thù.",
+    //   icon: "�",
+    //   title: "Phương pháp luận duy vật biện chứng",
+    //   description: "Là phương pháp nhận thức và cải tạo thế giới, xem xét sự vật, hiện tượng trong mối liên hệ, phát triển và mâu thuẫn.",
+    //   details: "Phương pháp luận duy vật biện chứng bao gồm các nguyên lý cơ bản: Nguyên lý về mối liên hệ phổ biến - mọi sự vật đều có mối liên hệ với nhau; Nguyên lý về sự phát triển - mọi sự vật đều trong trạng thái vận động, biến đổi, phát triển; Nguyên lý về mâu thuẫn - mâu thuẫn là động lực của sự phát triển. Áp dụng vào thực tiễn: phân tích cụ thể tình hình cụ thể, nhìn nhận toàn diện và khách quan hiện thực.",
     // },
   ];
 

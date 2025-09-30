@@ -73,8 +73,13 @@ export default function ChatPanel({
         <div className="message bot-message">
           <ChatbotIcon />
           <p className="message-text">
-            Chào bạn 😙, <br />
-            Tôi có thể giúp gì cho bạn về triết học nè?
+            Xin chào! Tôi là AI Trợ lý Triết học Mác-Lênin 🤖<br /><br />
+            Tôi có thể giúp bạn:<br />
+            ✅ Giải thích các khái niệm triết học<br />
+            ✅ Trả lời câu hỏi về chủ nghĩa duy vật<br />
+            ✅ Phân tích tư tưởng Mác-Lênin<br />
+            ✅ Hỗ trợ học tập và nghiên cứu<br /><br />
+            Hãy đặt câu hỏi cho tôi nhé! 😊
           </p>
         </div>
 
@@ -98,7 +103,7 @@ export default function ChatPanel({
         ))}
 
         {/* Thinking indicator */}
-        {status === "streaming" && (
+        {status === "streaming" || status === "submitted" && (
           <div className="message bot-message">
             <ChatbotIcon />
             <p className="message-text">Đang suy nghĩ...</p>
