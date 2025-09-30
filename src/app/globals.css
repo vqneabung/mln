@@ -1136,8 +1136,10 @@ body {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc6 100%);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .quiz-container {
@@ -1337,11 +1339,9 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  max-height: 75vh;
-  overflow-y: auto;
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .result-header {
@@ -1419,9 +1419,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  max-height: 350px;
+  max-height: 400px;
   overflow-y: auto;
-  padding-right: 0.5rem;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fafafa;
 }
 
 .answer-item {
@@ -1535,12 +1538,13 @@ body {
   }
 
   .quiz-section {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+    align-items: flex-start;
   }
 
   .quiz-card, .quiz-result {
     padding: 1.5rem;
-    margin: 0 0.5rem;
+    margin: 1rem 0.5rem;
   }
 
   .quiz-title {
@@ -1566,7 +1570,7 @@ body {
 
   .answers-review {
     max-height: 250px;
-    padding-right: 0;
+    padding: 0.8rem;
   }
 
   .answer-details {
