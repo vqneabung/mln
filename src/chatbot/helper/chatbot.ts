@@ -9,10 +9,15 @@ import {
 } from "ai";
 import { qwen3 } from "./model/ollama";
 import z from "zod";
+import fs from 'fs';
+
+const content = fs.readFileSync('public/upload/mln.txt', 'utf-8');
 
 const SYSTEM_PROMPT = `You are a helpful assistant. Check your knowledge base before answering any questions.
     Only respond to questions using information from tool calls.'
-    Try to use the tool "getInformation" to get relevant information from your knowledge base to answer questions.
+    Here is the knowledge base:
+    ${content}  
+    If the question is not related to the knowledge base, or
     if no relevant information is found in the tool calls, respond, "Sorry, I don't know."`;
 
 export async function StreamingTextGeneration(prompt: string) {
@@ -44,15 +49,6 @@ export function StreamingTextGenerationFromMessagesToResult(
     system: SYSTEM_PROMPT,
     messages: convertToModelMessages(messages),
     stopWhen: stepCountIs(100),
-    tools: {
-      getInformation: tool({
-        description: `get information from your knowledge base to answer questions.`,
-        inputSchema: z.object({
-          question: z.string().describe("the users question"),
-        }),
-        execute: async ({ question }) => {},
-      }),
-    },
   });
 
   return result;
@@ -72,3 +68,6 @@ export function StreamingTextGenerationWithToolFromMessagesToResult(
 
   return result;
 }
+
+
+
