@@ -39,7 +39,7 @@ export function Hero() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/philosophy.png" alt="Philosophy" className="hero-img" />
+          <img src="https://lh4.googleusercontent.com/proxy/7yFpVgfyd4ukHeNjFobBve3GLf_16bI3Hbvis7fUA4mQZ2SdkLd-fWKax8RjedfRm3ET528k2tinDkHrNK7caq_LK18Susl_9kXCPQYTtiF7CYHouhV-2EM" alt="Philosophy" className="hero-img" />
         </div>
       </div>
       <div className="hero-stats">

@@ -56,12 +56,12 @@ export function PhilosophyConcepts() {
       description: "Là hình thức tiến hành cách mạng thông qua bạo lực để giành chính quyền, vượt qua giới hạn luật pháp của giai cấp thống trị hiện thời.",
       details: "Trong xã hội có giai cấp, chính quyền thường chỉ có thể giành được bằng hình thức chiến tranh cách mạng, thông qua bạo lực cách mạng, vì giai cấp thống trị không bao giờ tự nguyện từ bỏ địa vị của mình. V.I. Lênin khẳng định: Nhà nước tư sản bị thay thế bởi nhà nước vô sản không thể bằng con đường \"tiêu vong,\" mà chỉ có thể bằng cách mạng bạo lực theo quy luật chung.",
     },
-    {
-      icon: "🕊️",
-      title: "Phương pháp hòa bình",
-      description: "Là phương pháp đấu tranh không dùng bạo lực cách mạng để giành chính quyền trong điều kiện cho phép.",
-      details: "Phương pháp hòa bình chỉ xảy ra khi có đủ hai điều kiện: 1) Giai cấp thống trị không còn bộ máy bạo lực đáng kể hoặc đã mất hết ý chí chống lại lực lượng cách mạng. 2) Lực lượng cách mạng phát triển mạnh, áp đảo kẻ thù.",
-    },
+    // {
+    //   icon: "🕊️",
+    //   title: "Phương pháp hòa bình",
+    //   description: "Là phương pháp đấu tranh không dùng bạo lực cách mạng để giành chính quyền trong điều kiện cho phép.",
+    //   details: "Phương pháp hòa bình chỉ xảy ra khi có đủ hai điều kiện: 1) Giai cấp thống trị không còn bộ máy bạo lực đáng kể hoặc đã mất hết ý chí chống lại lực lượng cách mạng. 2) Lực lượng cách mạng phát triển mạnh, áp đảo kẻ thù.",
+    // },
   ];
 
   return (

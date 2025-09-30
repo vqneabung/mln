@@ -15,12 +15,10 @@ import { qwen3 } from "./model/ollama";
 const content = await fs.readFileSync('public/upload/mln.txt', 'utf-8');
 
 const SYSTEM_PROMPT = `Bạn là một trợ lý AI thông minh, thân thiện và lôi cuốn với phong cách trò chuyện đặc trưng.
-**HƯỚNG DẪN NGHIÊM NGẶT:** Bạn PHẢI sử dụng công cụ "getInformation" để tìm kiếm thông tin liên quan từ cơ sở kiến ​​thức trước khi trả lời bất kỳ câu hỏi nào. Bạn chỉ nên trả lời những câu hỏi liên quan đến cơ sở kiến ​​thức được cung cấp bên dưới. Nếu câu hỏi không liên quan đến cơ sở kiến ​​thức, bạn PHẢI trả lời bằng câu trả lời dự phòng được cung cấp ở cuối câu hỏi này.
 **Cơ sở kiến ​​thức:** Cơ sở kiến ​​thức chứa thông tin về "Nhà nước và Cách mạng Xã hội". Hãy sử dụng thông tin này để trả lời các câu hỏi một cách chính xác và đầy đủ.
 
 **Nếu tìm thấy thông tin liên quan trong cơ sở kiến ​​thức:**
 Trả lời một cách nhiệt tình và đầy đủ thông tin, sử dụng giọng điệu ấm áp và hấp dẫn, tương tự như ví dụ sau:
-* **Khi được chào bằng "hello" hoặc tương tự:** " Chào bạn! Một lời chào thật là ấm áp! ✨ Tôi là AI thông minh, sẵn sàng lắng nghe và trò chuyện cùng bạn đây. Rất vui được kết nối! Hôm nay bạn muốn khám phá điều gì? Dù là chuyện vui, hay một câu hỏi hóc búa cần giải đáp, tôi luôn ở đây để giúp bạn hiểu sâu hơn về thế giới. Kể tôi nghe, bạn đang nghĩ gì đó! 😊"
 * **Khi trả lời câu hỏi liên quan đến nội dung:** Diễn đạt lại thông tin từ cơ sở kiến ​​thức theo cách dễ hiểu và hấp dẫn nhất có thể, có thể thêm các biểu tượng cảm xúc thích hợp.
 * **Nếu chào rồi hỏi một câu hỏi khác:** "Rất vui được trò chuyện với bạn! 😊 Về câu hỏi của bạn, dựa trên thông tin tôi có, [trả lời câu hỏi dựa trên cơ sở kiến ​​thức]. Nếu bạn muốn biết thêm chi tiết hoặc có câu hỏi khác, đừng ngần ngại hỏi nhé! Tôi luôn sẵn sàng giúp đỡ bạn."
 * **Nếu đơn giản là câu hỏi về thông tin trong cơ sở kiến ​​thức:** "Dựa trên thông tin tôi có, [trả lời câu hỏi dựa trên cơ sở kiến ​​thức]. Nếu bạn muốn biết thêm chi tiết hoặc có câu hỏi khác, đừng ngần ngại hỏi nhé! Tôi luôn sẵn sàng giúp đỡ bạn."
@@ -56,16 +54,8 @@ export function StreamingTextGenerationFromMessagesToResult(
       let result;
       try {
         result = streamText({
-          model: qwen3,
+          model: geminiFlashLite,
           system: SYSTEM_PROMPT,
-          tools: {
-            getInformation: tool({
-              description: `Lấy thông tin từ cơ sở kiến ​​thức của bạn để trả lời câu hỏi.`,
-              inputSchema: z.object({ question: z.string().describe("Câu hỏi của người dùng") }),
-              execute: async ({ question }) => {
-              },
-            }),
-          },
           temperature: 0.0,
           messages: convertToModelMessages(messages),
         });

@@ -49,7 +49,7 @@ export function Header() {
       <nav className="nav">
         <Link href="/" className="nav-brand">
           <img
-            src="/philosophy.png"
+            src="https://tulieuvankien.dangcongsan.vn/Uploads/2019/9/6/16/loi-thoi.jpg"
             alt="Marx-Lenin Philosophy"
             className="nav-logo"
           />
