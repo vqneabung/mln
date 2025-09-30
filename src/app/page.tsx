@@ -11,19 +11,10 @@ import { Quiz } from "@/components/quiz";
 
 export default function Home() {
   return (
-    <div className="app">
-      <Header />
-
-      <PhilosopherSlider />
-
       <main className="main-content">
         <Hero />
         <PhilosophyConcepts />
         <Quiz />
       </main>
-      <Footer />
-
-      <Chatbot />
-    </div>
   );
 }

@@ -19,7 +19,7 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a href="#about" className="nav-link">
+            <a href="/historical-materialism" className="nav-link">
               Chủ nghĩa duy vật lịch sử
             </a>
           </li>
