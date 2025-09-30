@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -30,12 +30,12 @@ export function Hero() {
             >
               Khám phá lý thuyết
             </button>
-            <button
+            <a
+              href="/historical-materialism"
               className="btn btn-secondary"
-              onClick={() => scrollToSection("about")}
             >
-              Tìm hiểu duy vật lịch sử
-            </button>
+              Tìm hiểu thêm về duy vật lịch sử
+            </a>
           </div>
         </div>
         <div className="hero-image">
@@ -59,4 +59,3 @@ export function Hero() {
     </section>
   );
 }
-

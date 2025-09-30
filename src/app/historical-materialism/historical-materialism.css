@@ -2,7 +2,7 @@
 .historical-materialism-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #fef5f3 0%, #fed4cc 100%);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), "Inter", sans-serif;
 }
 
 /* Header Styles */
