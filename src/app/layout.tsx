@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { PhilosopherSlider } from "@/components/PhilosopherSlider";
 import { Footer } from "@/components/Footer";
 import { Chatbot } from "@/components/Chatbot";
+import DevToolsProtection from "@/components/DevToolsProtection";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
+        <DevToolsProtection />
         <div className="app">
           <Header />
           <PhilosopherSlider />

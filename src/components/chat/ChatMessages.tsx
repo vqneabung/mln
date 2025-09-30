@@ -3,6 +3,8 @@ import { useRef, useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface ChatMessageProps {
   message: UIMessage;
@@ -20,10 +22,39 @@ export function ChatMessage({ message }: ChatMessageProps) {
             : 'bg-muted text-muted-foreground mr-auto'
         }`}
       >
-        <div className="whitespace-pre-wrap text-sm leading-relaxed break-words">
+        <div className="text-sm leading-relaxed break-words prose prose-sm max-w-none">
           {message.parts.map((part: any, index: number) =>
             part.type === 'text' ? (
-              <span key={index}>{part.text}</span>
+              <ReactMarkdown
+                key={index}
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  // Tùy chỉnh style cho các element
+                  p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+                  ul: ({ children }) => <ul className="list-disc pl-4 mb-2">{children}</ul>,
+                  ol: ({ children }) => <ol className="list-decimal pl-4 mb-2">{children}</ol>,
+                  li: ({ children }) => <li className="mb-1">{children}</li>,
+                  code: ({ children }) => (
+                    <code className="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono">
+                      {children}
+                    </code>
+                  ),
+                  pre: ({ children }) => (
+                    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto mb-2">
+                      {children}
+                    </pre>
+                  ),
+                  blockquote: ({ children }) => (
+                    <blockquote className="border-l-4 border-gray-300 pl-4 italic mb-2">
+                      {children}
+                    </blockquote>
+                  ),
+                  strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
+                  em: ({ children }) => <em className="italic">{children}</em>,
+                }}
+              >
+                {part.text}
+              </ReactMarkdown>
             ) : null
           )}
         </div>
