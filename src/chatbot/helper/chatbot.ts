@@ -6,13 +6,8 @@ import {
   UIMessage,
    
 } from "ai";
-import z from "zod";
-import fs from 'fs';
 import { geminiFlashLite } from "./model/google";
-import { qwen3 } from "./model/ollama";
 
-
-const content = await fs.readFileSync('public/upload/mln.txt', 'utf-8');
 
 const SYSTEM_PROMPT = `Bạn là một trợ lý AI thông minh, thân thiện và lôi cuốn với phong cách trò chuyện đặc trưng.
 **Cơ sở kiến ​​thức:** Cơ sở kiến ​​thức chứa thông tin về "Nhà nước và Cách mạng Xã hội". Hãy sử dụng thông tin này để trả lời các câu hỏi một cách chính xác và đầy đủ.
