@@ -15,243 +15,243 @@ export interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "Theo V.I. Lênin, giai cấp được định nghĩa dựa trên yếu tố nào chủ yếu?",
+    question: "Kiểu nhà nước đầu tiên trong lịch sử là?",
     options: [
-      "Mức thu nhập và lối sống",
-      "Địa vị trong hệ thống sản xuất xã hội",
-      "Trình độ học vấn và văn hóa",
-      "Nguồn gốc gia đình và dòng họ"
+      "Nhà nước chủ nô",
+      "Nhà nước phong kiến",
+      "Nhà nước tư sản",
+      "Nhà nước XHCN"
     ],
-    correctAnswer: 1,
-    explanation: "Giai cấp được định nghĩa chủ yếu dựa trên địa vị của họ trong hệ thống sản xuất xã hội, quan hệ với tư liệu sản xuất và vai trò trong tổ chức lao động xã hội."
+    correctAnswer: 0,
+    explanation: "Nhà nước chủ nô là kiểu nhà nước đầu tiên trong lịch sử loài người, xuất hiện khi xã hội chuyển từ chế độ cộng sản nguyên thủy sang xã hội có giai cấp."
   },
   {
     id: 2,
-    question: "Nguyên nhân sâu xa của sự xuất hiện giai cấp là gì?",
+    question: "Nguồn gốc ra đời của nhà nước?",
     options: [
-      "Sự khác biệt về năng lực cá nhân",
-      "Sự phát triển của lực lượng sản xuất và xuất hiện 'của dư'",
-      "Chiến tranh và xung đột giữa các bộ tộc",
-      "Sự khác biệt về trí tuệ và học thức"
+      "Để điều hoà mâu thuẫn giai cấp",
+      "Do mâu thuẫn giai cấp không thể điều hoà được",
+      "Nhà nước ra đời để quản lý xã hội",
+      "Cả ba đáp án trên"
     ],
     correctAnswer: 1,
-    explanation: "Sự phát triển của lực lượng sản xuất làm tăng năng suất lao động, xuất hiện 'của dư', tạo khả năng cho một tập đoàn chiếm đoạt lao động của tập đoàn khác."
+    explanation: "Nhà nước ra đời do mâu thuẫn giai cấp gay gắt không thể điều hoà được, là sản phẩm của xã hội phân chia giai cấp."
   },
   {
     id: 3,
-    question: "Nguyên nhân trực tiếp dẫn đến sự ra đời của giai cấp là gì?",
+    question: "Bản chất giai cấp của nhà nước nguyên nghĩa, theo quan điểm của chủ nghĩa Mác-Lênin?",
     options: [
-      "Sự phân công lao động xã hội",
-      "Xuất hiện chế độ tư hữu về tư liệu sản xuất",
-      "Phát triển thương mại và trao đổi",
-      "Hình thành nhà nước và luật pháp"
+      "Nhà nước đứng trên các giai cấp",
+      "Nhà nước chung cho mọi giai cấp",
+      "Nhà nước của giai cấp thống trị",
+      "Cả ba đáp án trên"
     ],
-    correctAnswer: 1,
-    explanation: "Xuất hiện chế độ tư hữu về tư liệu sản xuất là nguyên nhân trực tiếp dẫn đến sự phân chia xã hội thành các giai cấp đối kháng."
+    correctAnswer: 2,
+    explanation: "Bản chất của nhà nước là tổ chức chính trị của giai cấp thống trị về mặt kinh tế để bảo vệ trật tự hiện hành và đàn áp các giai cấp khác."
   },
   {
     id: 4,
-    question: "Theo lý thuyết Mác-xít, nhà nước ra đời khi nào?",
+    question: "Đặc trưng cơ bản của nhà nước là?",
     options: [
-      "Khi con người bắt đầu sống định cư",
-      "Khi xã hội phân chia thành các giai cấp đối kháng",
-      "Khi xuất hiện tôn giáo và tín ngưỡng",
-      "Khi phát minh ra chữ viết"
+      "Nhà nước quản lý dân cư trên một vùng lãnh thổ nhất định",
+      "Nhà nước xây dựng một bộ máy quyền lực chuyên nghiệp mang tính cưỡng chế",
+      "Nhà nước hình thành hệ thống thuế khoá để duy trì và tăng cường bộ máy cai trị",
+      "Bao gồm cả ba đặc trưng trên"
     ],
-    correctAnswer: 1,
-    explanation: "Nhà nước ra đời khi xã hội phân chia thành các giai cấp đối kháng, như một công cụ để giai cấp thống trị duy trì quyền lực của mình."
+    correctAnswer: 3,
+    explanation: "Nhà nước có ba đặc trưng cơ bản: quản lý theo lãnh thổ, có bộ máy quyền lực cưỡng chế đặc biệt, và có hệ thống thuế khóa."
   },
   {
     id: 5,
-    question: "Bản chất của nhà nước theo quan điểm Mác-xít là gì?",
+    question: "Về thực chất, nhà nước của xã hội có giai cấp thành lập nên một bộ máy quyền lực chuyên nghiệp nhằm mục đích gì?",
     options: [
-      "Tổ chức đại diện cho toàn thể nhân dân",
-      "Cơ quan thống trị của giai cấp có lợi ích chung",
-      "Máy móc trấn áp của giai cấp thống trị",
-      "Tổ chức quản lý xã hội công bằng"
+      "Giúp nhà nước quản lý xã hội để bảo vệ quyền thống trị của giai cấp thống trị",
+      "Bảo vệ tổ quốc và độc lập dân tộc",
+      "Cân bằng cán cân quân sự quốc tế với các nước khác",
+      "Thôn tính đất đai và chủ quyền đối với các quốc gia khác"
     ],
-    correctAnswer: 2,
-    explanation: "Bản chất của nhà nước là máy móc trấn áp của giai cấp thống trị, công cụ để một giai cấp áp bức giai cấp khác."
+    correctAnswer: 0,
+    explanation: "Bộ máy quyền lực của nhà nước được thành lập chủ yếu để bảo vệ quyền thống trị và lợi ích của giai cấp thống trị."
   },
   {
     id: 6,
-    question: "Đặc trưng nào KHÔNG phải là đặc trưng của nhà nước?",
+    question: "Theo quan điểm của triết học Mác-Lênin, chức năng cơ bản của nhà nước xã hội có giai cấp là?",
     options: [
-      "Tổ chức quyền lực theo nguyên tắc lãnh thổ",
-      "Có bộ máy quyền lực công cộng đặc biệt",
-      "Dựa trên mối quan hệ huyết thống",
-      "Có quyền thu thuế và phát hành tiền tệ"
+      "Bảo đảm an sinh xã hội",
+      "Thống trị giai cấp trên mọi mặt của đời sống xã hội",
+      "Xây dựng hệ thống luật pháp",
+      "Xây dựng thang bậc chính trị"
     ],
-    correctAnswer: 2,
-    explanation: "Nhà nước tổ chức theo nguyên tắc lãnh thổ chứ không phải dựa trên mối quan hệ huyết thống như các tổ chức thị tộc cũ."
+    correctAnswer: 1,
+    explanation: "Chức năng cơ bản của nhà nước trong xã hội có giai cấp là thống trị giai cấp, duy trì và bảo vệ lợi ích của giai cấp thống trị."
   },
   {
     id: 7,
-    question: "Cách mạng xã hội về bản chất là gì?",
+    question: "Ngày nay, đâu là nguyên nhân cơ bản khiến các quốc gia phải mở rộng quan hệ đối ngoại?",
     options: [
-      "Thay đổi hình thức chính quyền",
-      "Cải cách kinh tế và xã hội từ từ",
-      "Thay thế chế độ xã hội cũ bằng chế độ mới tiến bộ hơn",
-      "Thay đổi lãnh đạo nhà nước"
+      "Quá trình toàn cầu hóa trong mọi lĩnh vực của đời sống",
+      "Khan hiếm năng lượng",
+      "Chủ nghĩa tư bản phát triển",
+      "Khủng hoảng lương thực"
     ],
-    correctAnswer: 2,
-    explanation: "Cách mạng xã hội về bản chất là việc thay thế toàn bộ chế độ xã hội cũ lạc hậu bằng chế độ xã hội mới tiến bộ hơn."
+    correctAnswer: 0,
+    explanation: "Quá trình toàn cầu hóa làm cho các quốc gia phải mở rộng quan hệ đối ngoại để hội nhập và phát triển."
   },
   {
     id: 8,
-    question: "Nguyên nhân gốc rễ của cách mạng xã hội là gì?",
+    question: "Theo quan điểm của chủ nghĩa Mác-Lênin, xét về sự khác biệt với các nhà nước khác trong lịch sử, thì nhà nước vô sản là?",
     options: [
-      "Xung đột chính trị giữa các nhóm",
-      "Mâu thuẫn giữa lực lượng sản xuất và quan hệ sản xuất",
-      "Bất công trong phân phối thu nhập",
-      "Khủng hoảng kinh tế tài chính"
+      "Nhà nước nửa nhà nước",
+      "Nhà nước đặc biệt",
+      "Nhà nước kiểu mới",
+      "Cả 3 đáp án trên đều đúng"
     ],
-    correctAnswer: 1,
-    explanation: "Nguyên nhân gốc rễ của cách mạng xã hội là mâu thuẫn giữa lực lượng sản xuất đang phát triển và quan hệ sản xuất cũ đã lạc hậu."
+    correctAnswer: 3,
+    explanation: "Nhà nước vô sản vừa là nhà nước nửa nhà nước, vừa đặc biệt, vừa là kiểu mới so với các loại nhà nước trước đây."
   },
   {
     id: 9,
-    question: "Điều kiện khách quan của cách mạng xã hội bao gồm?",
+    question: "Mô hình nào được xem là nhà nước chuyên chính vô sản đầu tiên trong lịch sử nhân loại?",
     options: [
-      "Chỉ có khủng hoảng kinh tế",
-      "Giai cấp thống trị khủng hoảng và quần chúng khổ sở",
-      "Chỉ có sự bất mãn của nhân dân",
-      "Chỉ có sự yếu kém của chính quyền"
+      "Nhà nước liên bang xô viết (Liên Xô)",
+      "Công xã Pa-ri",
+      "Xô viết nghệ tĩnh",
+      "Cả ba đáp án trên đều đúng"
     ],
     correctAnswer: 1,
-    explanation: "Điều kiện khách quan bao gồm cả khủng hoảng của giai cấp thống trị và sự khổ sở, tích cực hoạt động tăng cao của quần chúng nhân dân."
+    explanation: "Công xã Pa-ri (1871) được Marx và Engels đánh giá là hình thức chính trị đầu tiên của nhà nước chuyên chính vô sản."
   },
   {
     id: 10,
-    question: "Nhân tố chủ quan trong cách mạng xã hội là gì?",
+    question: "Đặc điểm của nhà nước vô sản?",
     options: [
-      "Kinh tế phát triển mạnh",
-      "Đảng cách mạng và ý thức giai cấp của quần chúng",
-      "Hỗ trợ từ các nước bên ngoài",
-      "Khủng hoảng của giai cấp thống trị"
+      "Tổ chức quyền lực của nhân dân. Có chức năng tổ chức và xây dựng là chủ yếu",
+      "Là tổ chức quyền lực của giai cấp mạnh nhất trong xã hội",
+      "Có chức năng trấn áp là chủ yếu",
+      "Bao gồm đáp án B và C"
     ],
-    correctAnswer: 1,
-    explanation: "Nhân tố chủ quan là sự có mặt của đảng cách mạng và ý thức giai cấp giác ngộ cao của quần chúng nhân dân."
+    correctAnswer: 0,
+    explanation: "Nhà nước vô sản là tổ chức quyền lực của nhân dân lao động, có chức năng tổ chức xây dựng xã hội mới là chủ yếu."
   },
   {
     id: 11,
-    question: "Mối quan hệ giữa giai cấp - dân tộc - nhân loại có đặc điểm gì?",
+    question: "Theo quan điểm của chủ nghĩa Mác-Lênin, cách mạng xã hội là?",
     options: [
-      "Hoàn toàn đối kháng với nhau",
-      "Độc lập tuyệt đối với nhau",
-      "Có mối quan hệ biện chứng, thống nhất và đấu tranh",
-      "Luôn luôn hòa hợp, không mâu thuẫn"
+      "Sự biến đổi có tính chất bước ngoặt và căn bản về chất trong toàn bộ các lĩnh vực của đời sống xã hội",
+      "Việc lật đổ một chế độ chính trị đã lỗi thời, thiết lập một chế độ chính trị tiến bộ hơn",
+      "Sự thay đổi về hình thái kinh tế - xã hội",
+      "Cả 3 đáp án trên đều đúng"
     ],
-    correctAnswer: 2,
-    explanation: "Mối quan hệ giữa ba cộng đồng này mang tính biện chứng, vừa thống nhất vừa có đấu tranh, mâu thuẫn trong điều kiện lịch sử cụ thể."
+    correctAnswer: 3,
+    explanation: "Cách mạng xã hội bao gồm tất cả các khía cạnh: thay đổi căn bản toàn diện, lật đổ chế độ cũ và chuyển đổi hình thái kinh tế-xã hội."
   },
   {
     id: 12,
-    question: "Lợi ích nào là nền tảng chung cho sự tồn tại của giai cấp và dân tộc?",
+    question: "Lịch sử xã hội loài người đã trải qua mấy cuộc cách mạng xã hội lớn?",
     options: [
-      "Lợi ích giai cấp",
-      "Lợi ích dân tộc",
-      "Lợi ích nhân loại",
-      "Lợi ích cá nhân"
+      "Một",
+      "Hai", 
+      "Ba",
+      "Bốn"
     ],
-    correctAnswer: 2,
-    explanation: "Lợi ích nhân loại là nền tảng chung, là điều kiện tồn tại và phát triển của cả giai cấp và dân tộc."
+    correctAnswer: 3,
+    explanation: "Lịch sử đã trải qua 4 cuộc cách mạng xã hội lớn: từ cộng sản nguyên thủy lên chế độ có giai cấp, lên phong kiến, lên tư bản chủ nghĩa, và lên xã hội chủ nghĩa."
   },
   {
     id: 13,
-    question: "Trong điều kiện nào giai cấp công nhân có lợi ích thống nhất với dân tộc?",
+    question: "Nguyên nhân cơ bản của cách mạng xã hội?",
     options: [
-      "Khi đấu tranh giành độc lập dân tộc",
-      "Khi xây dựng chủ nghĩa xã hội",
-      "Cả hai trường hợp trên",
-      "Không bao giờ thống nhất"
+      "Mâu thuẫn giữa lực lượng sản xuất và quan hệ sản xuất",
+      "Mâu thuẫn giữa cơ sở hạ tầng và kiến trúc thượng tầng",
+      "Mâu thuẫn giữa giai cấp thống trị và giai cấp bị trị",
+      "Cả ba đáp án trên"
     ],
-    correctAnswer: 2,
-    explanation: "Giai cấp công nhân có lợi ích thống nhất với dân tộc cả trong đấu tranh giành độc lập dân tộc và xây dựng chủ nghĩa xã hội."
+    correctAnswer: 0,
+    explanation: "Nguyên nhân cơ bản và sâu xa nhất của cách mạng xã hội là mâu thuẫn giữa lực lượng sản xuất phát triển và quan hệ sản xuất lạc hậu."
   },
   {
     id: 14,
-    question: "Xu hướng phát triển của cách mạng xã hội hiện nay là gì?",
+    question: "Cuộc cách mạng tư sản được đánh giá là triệt để nhất xảy ra ở quốc gia nào?",
     options: [
-      "Chỉ có cách mạng bạo lực",
-      "Chỉ có cách mạng hòa bình",
-      "Đa dạng hóa con đường cách mạng theo điều kiện cụ thể",
-      "Không còn cách mạng xã hội"
+      "Mỹ",
+      "Anh",
+      "Pháp",
+      "Đức"
     ],
     correctAnswer: 2,
-    explanation: "Cách mạng xã hội hiện nay có xu hướng đa dạng hóa, các dân tộc có thể chọn con đường phù hợp với điều kiện cụ thể của mình."
+    explanation: "Cách mạng tư sản Pháp (1789) được đánh giá là triệt để nhất vì đã phá bỏ hoàn toàn chế độ phong kiến và thiết lập nền cộng hóa dân chủ."
   },
   {
     id: 15,
-    question: "Tác động nào ảnh hưởng đến cách mạng xã hội hiện nay?",
+    question: "Quốc gia nào ở vùng Ca-ri-bê đang thực hiện thành công cách mạng XHCN?",
     options: [
-      "Cách mạng khoa học công nghệ",
-      "Toàn cầu hóa",
-      "Các vấn đề toàn cầu",
-      "Tất cả các yếu tố trên"
+      "Chi-lê",
+      "Cô-lôm-bi-a", 
+      "Hôn-đu-rát",
+      "Cu-ba"
     ],
     correctAnswer: 3,
-    explanation: "Cách mạng xã hội hiện nay chịu ảnh hưởng tổng hợp của cách mạng KHCN, toàn cầu hóa và các vấn đề toàn cầu."
+    explanation: "Cu-ba là quốc gia duy nhất ở vùng Ca-ri-bê đang thực hiện thành công con đường xây dựng chủ nghĩa xã hội."
   },
   {
     id: 16,
-    question: "Đặc điểm của nhà nước xã hội chủ nghĩa là gì?",
+    question: "Theo C. Mác và Ph. Ăngghen thì cách mạng XHCN chỉ có thể xảy ra và thành công ở đâu?",
     options: [
-      "Nhà nước của giai cấp tư sản",
-      "Nhà nước của toàn dân do giai cấp công nhân lãnh đạo",
-      "Nhà nước không có giai cấp",
-      "Nhà nước của giới trí thức"
+      "Tất cả các nước trên thế giới",
+      "Các nước tư bản phát triển",
+      "Các nước thuộc địa",
+      "Các nước tư bản phát triển trung bình"
     ],
     correctAnswer: 1,
-    explanation: "Nhà nước xã hội chủ nghĩa là nhà nước của toàn dân nhưng do giai cấp công nhân làm lãnh đạo thông qua đảng cộng sản."
+    explanation: "Theo quan điểm ban đầu của Marx và Engels, cách mạng xã hội chủ nghĩa sẽ xảy ra đầu tiên ở các nước tư bản phát triển nhất."
   },
   {
     id: 17,
-    question: "Quá trình tiêu vong của nhà nước xảy ra khi nào?",
+    question: "Sau khi phân tích về quy luật phát triển không đồng đều của các nước đế quốc đầu thế kỷ XX, Lênin đã chỉ ra rằng cách mạng XHCN có thể xảy ra ở đâu?",
     options: [
-      "Ngay sau khi cách mạng thành công",
-      "Khi xây dựng được chủ nghĩa cộng sản hoàn chỉnh",
-      "Khi kinh tế phát triển cao",
-      "Khi có dân chủ tuyệt đối"
+      "Ở các nước tư bản phát triển nhất",
+      "Ở các nước tư bản trung bình, thậm chí ở các nước chưa qua sự phát triển tư bản chủ nghĩa",
+      "Ở các nước thuộc địa",
+      "Đồng loạt ở tất cả các nước trên thế giới"
     ],
     correctAnswer: 1,
-    explanation: "Nhà nước sẽ tiêu vong khi xã hội phát triển đến giai đoạn cộng sản hoàn chỉnh, không còn giai cấp và mâu thuẫn giai cấp."
+    explanation: "Lenin đã phát triển lý thuyết về khả năng thắng lợi của cách mạng xã hội chủ nghĩa ở từng nước riêng lẻ, kể cả những nước chưa phát triển tư bản chủ nghĩa đầy đủ."
   },
   {
     id: 18,
-    question: "Hình thức cách mạng xã hội phụ thuộc vào yếu tố nào?",
+    question: "Cuộc cách mạng xã hội nào được xem là mở đầu sự ra đời của một chế độ xã hội mới của nhân loại, xã hội XHCN?",
     options: [
-      "Ý muốn chủ quan của lãnh đạo",
-      "Điều kiện lịch sử cụ thể và tương quan lực lượng",
-      "Truyền thống văn hóa dân tộc",
-      "Ảnh hưởng của các nước khác"
+      "Cách mạng tháng 10 Nga",
+      "Cách mạng tháng 8-1945 ở Việt Nam",
+      "Cách mạng Tân Hợi ở Trung Quốc",
+      "Cách mạng tư sản Pháp"
     ],
-    correctAnswer: 1,
-    explanation: "Hình thức cách mạng được quyết định bởi điều kiện lịch sử cụ thể và tương quan lực lượng giữa các giai cấp trong xã hội."
+    correctAnswer: 0,
+    explanation: "Cách mạng tháng Mười Nga năm 1917 là cuộc cách mạng xã hội chủ nghĩa đầu tiên thành công, mở đầu kỷ nguyên mới của nhân loại."
   },
   {
     id: 19,
-    question: "Vai trò của quần chúng nhân dân trong cách mạng xã hội là gì?",
+    question: "Hình thức nhà nước cộng hòa xuất hiện đầu tiên ở đâu?",
     options: [
-      "Chỉ là người ủng hộ thụ động",
-      "Là lực lượng quyết định thành công của cách mạng",
-      "Không có vai trò quan trọng",
-      "Chỉ tham gia khi được huy động"
+      "Hy Lạp",
+      "Ấn Độ",
+      "Ai Cập", 
+      "La Mã"
     ],
-    correctAnswer: 1,
-    explanation: "Quần chúng nhân dân là lực lượng quyết định thành công của cách mạng xã hội, là chủ thể thực hiện cách mạng."
+    correctAnswer: 3,
+    explanation: "Hình thức nhà nước cộng hòa xuất hiện đầu tiên ở La Mã cổ đại (khoảng thế kỷ VI trước Công nguyên)."
   },
   {
     id: 20,
-    question: "Mục tiêu cuối cùng của cách mạng xã hội là gì?",
+    question: "Hình thức nhà nước của nước Pháp hiện nay?",
     options: [
-      "Thay đổi chính quyền",
-      "Cải thiện đời sống vật chất",
-      "Xây dựng xã hội không giai cấp, bình đẳng và tự do",
-      "Phát triển kinh tế nhanh chóng"
+      "Quân chủ lập hiến",
+      "Cộng hòa",
+      "Cộng hòa liên bang",
+      "Dân chủ nhân dân"
     ],
-    correctAnswer: 2,
-    explanation: "Mục tiêu cuối cùng của cách mạng xã hội là xây dựng xã hội cộng sản - xã hội không có giai cấp, không có áp bức bóc lột, con người được tự do và bình đẳng."
+    correctAnswer: 1,
+    explanation: "Pháp hiện nay là nước cộng hòa với hình thức chính phủ bán tổng thống (Cộng hòa Pháp lần thứ V)."
   }
 ];
 

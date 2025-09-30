@@ -34,11 +34,9 @@ export default function RootLayout({
       >
         <div className="app">
           <Header />
-
           <PhilosopherSlider />
           {children}
           <Footer />
-
           <Chatbot />
         </div>
       </body>
