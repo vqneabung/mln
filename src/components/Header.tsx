@@ -14,7 +14,7 @@ export function Header() {
         </div>
         <ul className="nav-menu">
           <li>
-            <a href="#home" className="nav-link">
+            <a href="/#home" className="nav-link">
               Trang chủ
             </a>
           </li>
@@ -24,18 +24,13 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a href="#concepts" className="nav-link">
+            <a href="/#concepts" className="nav-link">
               Các khái niệm
             </a>
           </li>
           <li>
-            <a href="#theory" className="nav-link">
-              Lý thuyết
-            </a>
-          </li>
-          <li>
-            <a href="#revolution" className="nav-link">
-              Cách mạng xã hội
+            <a href="/#quiz" className="nav-link">
+              Quizz
             </a>
           </li>
         </ul>
