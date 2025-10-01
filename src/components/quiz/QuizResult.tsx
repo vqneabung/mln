@@ -73,19 +73,19 @@ export default function QuizResult({
                   </span>
                 </div>
                 
-                {!isCorrect && (
-                  <div className="answer-details">
+                <div className="answer-details">
+                  {!isCorrect && (
                     <div className="user-answer">
                       <strong>Đáp án của bạn:</strong> {question.options[userAnswer]}
                     </div>
-                    <div className="correct-answer">
-                      <strong>Đáp án đúng:</strong> {question.options[question.correctAnswer]}
-                    </div>
-                    <div className="explanation">
-                      <strong>Giải thích:</strong> {question.explanation}
-                    </div>
+                  )}
+                  <div className="correct-answer">
+                    <strong>Đáp án đúng:</strong> {question.options[question.correctAnswer]}
                   </div>
-                )}
+                  <div className="explanation">
+                    <strong>Giải thích:</strong> {question.explanation}
+                  </div>
+                </div>
               </div>
             );
           })}

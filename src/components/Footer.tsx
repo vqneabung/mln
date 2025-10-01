@@ -1,6 +1,53 @@
-'use client'
+"use client";
+
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 export function Footer() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    if (pathname === "/") {
+      // Nếu đang ở trang chủ, scroll lên đầu
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      // Nếu đang ở trang khác, navigate về trang chủ
+      router.push("/");
+    }
+  };
+
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+
+    // Nếu đang ở trang chủ, scroll đến section
+    if (pathname === "/") {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const headerHeight = 80;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      // Nếu đang ở trang khác, navigate về trang chủ với hash
+      router.push(`/#${targetId}`);
+    }
+  };
+
   return (
     <footer id="contact" className="footer">
       <div className="container-main">
@@ -24,22 +71,22 @@ export function Footer() {
             <h4>Liên kết nhanh</h4>
             <ul className="footer-links">
               <li>
-                <a href="#home">Trang chủ</a>
+                <a href="/#home" onClick={handleHomeClick}>
+                  Trang chủ
+                </a>
               </li>
               <li>
-                <a href="#about">Giới thiệu</a>
+                <a
+                  href="/#concepts"
+                  onClick={(e) => handleSmoothScroll(e, "concepts")}
+                >
+                  Các Khái niệm
+                </a>
               </li>
               <li>
-                <a href="#philosophy">Triết học</a>
-              </li>
-              <li>
-                <a href="#services">Dịch vụ</a>
-              </li>
-              <li>
-                <a href="/quiz">Trắc nghiệm</a>
-              </li>
-              <li>
-                <a href="#contact">Liên hệ</a>
+                <Link href="/historical-materialism">
+                  Chủ nghĩa duy vật lịch sử
+                </Link>
               </li>
             </ul>
           </div>
